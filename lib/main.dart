@@ -22,8 +22,18 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Hello JFrog'),
         ),
-        body: const Center(
-          child: Text('This is the first Flutter App'),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                  'This is my first Flutter App',
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Image.asset('lib/images/JFrog.png'),
+              Text("WordPair Random Text: " + wordPair.asUpperCase)
+            ],
+          )
         ),
       ),
     );
